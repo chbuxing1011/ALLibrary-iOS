@@ -1,2 +1,3 @@
-RTLibrary-ios
+ALLibrary-ios
 =============
+站在巨人的肩膀上，针对RTALLibrary-ios进行了扩展和修改，主要是针对自己使用的项目做一些优化。后续会慢慢添加需要的东西
