@@ -11,7 +11,7 @@
 #import "RTJSONResponseSerializerWithData.h"
 
 @interface RTHttpClient ()
-@property (nonatomic, strong) AFHTTPSessionManager *manager;
+@property(nonatomic, strong) AFHTTPSessionManager *manager;
 @end
 
 @implementation RTHttpClient
@@ -29,11 +29,13 @@
          setAcceptableContentTypes:
          [NSSet setWithObjects:@"application/json", @"text/json",
           @"text/javascript", @"text/html", @"text/css",
-          nil]];
+          @"application/x-javascript", nil]];
         
-        [self.manager.requestSerializer
-         setAuthorizationHeaderFieldWithUsername:SERVER_AUTH_USERNAME
-         password:SERVER_AUTH_PASSWORD];
+        if (SERVER_AUTH_ISNEEDAUTH) {
+            [self.manager.requestSerializer
+             setAuthorizationHeaderFieldWithUsername:SERVER_AUTH_USERNAME
+             password:SERVER_AUTH_PASSWORD];
+        }
     }
     return self;
 }
@@ -92,8 +94,7 @@
             default:
                 break;
         }
-    }
-    else {
+    } else {
         //网络错误咯
         [self showExceptionDialog];
         //发出网络异常通知广播
@@ -113,8 +114,7 @@
                 parameters:parameters
                    success:success
                    failure:failure];
-    }
-    else {
+    } else {
         [self showExceptionDialog];
     }
 }

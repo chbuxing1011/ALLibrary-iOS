@@ -11,13 +11,16 @@
 #define SERVER_AUTH_USERNAME @"xxc.test"
 #define SERVER_AUTH_PASSWORD @"jpRc`PlcT]Uj"
 
+/***************是否需要鉴权：1、需要 0、不需要***************/
+#define SERVER_AUTH_ISNEEDAUTH 0
+
 /***************SERVER HOST***************/
 
-#define SERVER_HOST @"http://192.168.0.190:14330/api/"
+#define SERVER_HOST @"http://58.243.186.126:888/mapi/"
 
 /***************SERVER API***************/
 //登录
-#define API_LOGIN @"Users/LoginWithPhone"
+#define API_LOGIN @"login.action"
 
 @interface APIConfig : NSObject
 
