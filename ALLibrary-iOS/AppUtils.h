@@ -51,4 +51,5 @@
 //验证手机号码合法性（正则）
 + (BOOL)checkPhoneNumber:(NSString *)phoneNumber;
 
++ (NSString *)getcrittercismKey;
 @end

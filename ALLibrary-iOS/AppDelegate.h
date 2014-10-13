@@ -9,10 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Crittercism.h"
 
-#define CRITTERCISM_APP_ID @"543b8df7bb94751247000002"
-
 @interface AppDelegate : UIResponder<UIApplicationDelegate>
-
 @property(strong, nonatomic) UIWindow *window;
-
 @end

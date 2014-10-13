@@ -35,9 +35,22 @@
                                     <action selector="crash:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aNx-7z-mh8"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2W-y0-wNX">
+                                <rect key="frame" x="279" y="559" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="B2W-y0-wNX" secondAttribute="bottom" constant="20" symbolic="YES" id="bHS-mh-Ip9"/>
+                            <constraint firstItem="B2W-y0-wNX" firstAttribute="centerX" secondItem="CL6-nZ-wXM" secondAttribute="centerX" id="gMh-qQ-K5M"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="m_versionLbl" destination="B2W-y0-wNX" id="gJM-rQ-he3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

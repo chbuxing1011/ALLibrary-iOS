@@ -154,5 +154,14 @@
         return NO;
     }
 }
-
++ (NSString *)getcrittercismKey {
+    NSString *path =
+    [[NSBundle mainBundle] pathForResource:@"Crittercism" ofType:@"xcconfig"];
+    NSString *key = [[NSString stringWithContentsOfFile:path
+                                               encoding:NSUTF8StringEncoding
+                                                  error:nil]
+                     substringWithRange:NSMakeRange(7, 24)];
+    DLog(@"=====crittercism APP_ID: %@=====", key);
+    return key;
+}
 @end

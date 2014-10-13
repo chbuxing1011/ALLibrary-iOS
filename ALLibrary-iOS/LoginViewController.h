@@ -9,5 +9,6 @@
 #import "BaseViewController.h"
 
 @interface LoginViewController : BaseViewController
+@property (weak, nonatomic) IBOutlet UILabel *m_versionLbl;
 
 @end

@@ -35,6 +35,7 @@
 		CE48E3B619E7CFC9004D8444 /* APIConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48E3B519E7CFC9004D8444 /* APIConfig.m */; };
 		CE79DDC119EBD1DA0000A993 /* dsym_upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = CE79DDBF19EBD1DA0000A993 /* dsym_upload.sh */; };
 		CE79DDC219EBD1DA0000A993 /* libCrittercism_v5_0_4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE79DDC019EBD1DA0000A993 /* libCrittercism_v5_0_4.a */; };
+		CE9F885319EBF93700525AF4 /* Crittercism.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CE9F885219EBF93700525AF4 /* Crittercism.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -91,6 +92,7 @@
 		CE79DDBE19EBD1DA0000A993 /* CrittercismDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrittercismDelegate.h; sourceTree = "<group>"; };
 		CE79DDBF19EBD1DA0000A993 /* dsym_upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = dsym_upload.sh; sourceTree = "<group>"; };
 		CE79DDC019EBD1DA0000A993 /* libCrittercism_v5_0_4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCrittercism_v5_0_4.a; sourceTree = "<group>"; };
+		CE9F885219EBF93700525AF4 /* Crittercism.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Crittercism.xcconfig; sourceTree = "<group>"; };
 		D28D886575A94289A4C45723 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +119,7 @@
 				941BF2B51963ABD50003559D /* ALLibrary-iOS */,
 				941BF2AE1963ABD50003559D /* Frameworks */,
 				941BF2AD1963ABD50003559D /* Products */,
+				CE9F885219EBF93700525AF4 /* Crittercism.xcconfig */,
 				D28D886575A94289A4C45723 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
@@ -374,7 +377,7 @@
 				941BF2A91963ABD50003559D /* Frameworks */,
 				941BF2AA1963ABD50003559D /* Resources */,
 				2FBBB97B397C4BC296838289 /* Copy Pods Resources */,
-				CE79DDC319EBD2AD0000A993 /* ShellScript */,
+				CE79DDC319EBD2AD0000A993 /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -425,6 +428,7 @@
 				CE79DDC119EBD1DA0000A993 /* dsym_upload.sh in Resources */,
 				CE48E3B319E7CE80004D8444 /* LaunchScreen.xib in Resources */,
 				941BF2C21963ABD50003559D /* Images.xcassets in Resources */,
+				CE9F885319EBF93700525AF4 /* Crittercism.xcconfig in Resources */,
 				CE48E3B419E7CE80004D8444 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,18 +466,19 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		CE79DDC319EBD2AD0000A993 /* ShellScript */ = {
+		CE79DDC319EBD2AD0000A993 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputPaths = (
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "APP_ID=\"543b8df7bb94751247000002\"\nAPI_KEY=\"RpiMACqaFPcvWtn09H2P1MKgPlihcAP8\"\nsource \"${SRCROOT}\"/Common/CrittercismSDK/dsym_upload.sh";
+			shellScript = "APP_ID=\"${APP_ID}\"\nAPI_KEY=\"${API_KEY}\"\nsource \"${SRCROOT}\"/Common/CrittercismSDK/dsym_upload.sh";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -519,6 +524,7 @@
 /* Begin XCBuildConfiguration section */
 		941BF2D61963ABD50003559D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE9F885219EBF93700525AF4 /* Crittercism.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -558,6 +564,7 @@
 		};
 		941BF2D71963ABD50003559D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE9F885219EBF93700525AF4 /* Crittercism.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -643,7 +650,7 @@
 				941BF2D71963ABD50003559D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		941BF2D81963ABD50003559D /* Build configuration list for PBXNativeTarget "ALLibrary-iOS" */ = {
 			isa = XCConfigurationList;
@@ -652,7 +659,7 @@
 				941BF2DA1963ABD50003559D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

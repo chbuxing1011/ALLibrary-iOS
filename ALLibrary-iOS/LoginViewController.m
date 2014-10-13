@@ -18,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
+    
+    NSString *app_Version =
+    [infoDictionary objectForKey:@"CFBundleShortVersionString"];
+    self.m_versionLbl.text = app_Version;
+    
     //初始化LoginView，设置LoginViewDelegate处理登录视图的事件
     
     //在视图代理方法里通过调用LoginHandler处理登录业务逻辑，发起网络请求和结果处理均在LoginHandler中完成
