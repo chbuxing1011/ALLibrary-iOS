@@ -43,7 +43,7 @@
      success:^(NSURLSessionDataTask *task, id responseObject) {
          UserEntity *userEntity =
          [UserEntity modelObjectWithDictionary:responseObject];
-         NSLog(@"responseObject: %@", userEntity);
+         NSLog(@"responseObject: %@", responseObject);
      }
      
      failure:^(NSURLSessionDataTask *task, NSError *error) {
