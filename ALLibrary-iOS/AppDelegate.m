@@ -19,7 +19,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //    self.window.backgroundColor = [UIColor whiteColor];
     //    [self.window makeKeyAndVisible];
     
-    [Crittercism enableWithAppID:[AppUtils getCrittercismKey] andDelegate:nil];
+    [Crittercism enableWithAppID:CRITTERCISM_APP_ID andDelegate:nil];
     return YES;
 }
 

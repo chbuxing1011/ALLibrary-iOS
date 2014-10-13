@@ -154,14 +154,5 @@
         return NO;
     }
 }
-+ (NSString *)getCrittercismKey {
-    NSString *path =
-    [[NSBundle mainBundle] pathForResource:@"Crittercism" ofType:@"xcconfig"];
-    NSString *config = [NSString stringWithContentsOfFile:path
-                                                 encoding:NSUTF8StringEncoding
-                                                    error:nil];
-    
-    config = [config substringWithRange:NSMakeRange(8, 24)];
-    return config;
-}
+
 @end

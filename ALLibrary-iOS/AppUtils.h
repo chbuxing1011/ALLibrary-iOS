@@ -51,11 +51,4 @@
 //验证手机号码合法性（正则）
 + (BOOL)checkPhoneNumber:(NSString *)phoneNumber;
 
-/**
- *  获取crittercism的key值
- *
- *  @return crittercism的key值
- */
-+ (NSString *)getCrittercismKey;
-
 @end

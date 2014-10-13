@@ -43,7 +43,7 @@
     //         NSLog(@"Error: %@", error);
     //     }];
     
-    NSLog(@"%d", @"123");
+    NSLog(@"%@", 1);
 }
 - (IBAction)crash:(id)sender {
     NSArray *array = [NSArray new];
