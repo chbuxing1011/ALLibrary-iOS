@@ -30,22 +30,22 @@
 }
 
 - (IBAction)login:(id)sender {
-    NSMutableDictionary *param = [NSMutableDictionary new];
-    [param setObject:@"18012306580" forKey:@"telphone"];
-    
+    //    NSMutableDictionary *param = [NSMutableDictionary new];
+    //    [param setObject:@"18012306580" forKey:@"telphone"];
+    //
     //    [[RTHttpClient defaultClient]
     //     requestWithPath:[[APIConfig defaultConfig] getAPIURL:API_LOGIN]
     //     method:RTHttpRequestGet
-    //	    parameters:param
-    //     prepareExecute: ^{}
+    //     parameters:param
+    //     prepareExecute:^{}
     //
-    //     success: ^(NSURLSessionDataTask *task, id responseObject) {
+    //     success:^(NSURLSessionDataTask *task, id responseObject) {
     //         UserEntity *userEntity =
-    //	        [UserEntity modelObjectWithDictionary:responseObject];
+    //         [UserEntity modelObjectWithDictionary:responseObject];
     //         NSLog(@"responseObject: %@", userEntity);
     //     }
     //
-    //     failure: ^(NSURLSessionDataTask *task, NSError *error) {
+    //     failure:^(NSURLSessionDataTask *task, NSError *error) {
     //         NSLog(@"Error: %@", error);
     //     }];
     
