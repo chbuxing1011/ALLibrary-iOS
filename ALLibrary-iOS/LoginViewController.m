@@ -9,6 +9,7 @@
 #import "LoginViewController.h"
 #import "RTHttpClient.h"
 #import "UserEntity.h"
+#import "UserDefaultsUtils.h"
 @interface LoginViewController ()
 
 @end
@@ -30,30 +31,28 @@
 }
 
 - (IBAction)login:(id)sender {
-    //    NSMutableDictionary *param = [NSMutableDictionary new];
-    //    [param setObject:@"18012306580" forKey:@"telphone"];
-    //
-    //    [[RTHttpClient defaultClient]
-    //     requestWithPath:[[APIConfig defaultConfig] getAPIURL:API_LOGIN]
-    //     method:RTHttpRequestGet
-    //     parameters:param
-    //     prepareExecute:^{}
-    //
-    //     success:^(NSURLSessionDataTask *task, id responseObject) {
-    //         UserEntity *userEntity =
-    //         [UserEntity modelObjectWithDictionary:responseObject];
-    //         NSLog(@"responseObject: %@", userEntity);
-    //     }
-    //
-    //     failure:^(NSURLSessionDataTask *task, NSError *error) {
-    //         NSLog(@"Error: %@", error);
-    //     }];
+    NSMutableDictionary *param = [NSMutableDictionary new];
+    [param setObject:@"18012306580" forKey:@"telphone"];
     
-    NSLog(@"%@", 1);
+    [[RTHttpClient defaultClient]
+     requestWithPath:[[APIConfig defaultConfig] getAPIURL:API_LOGIN]
+     method:RTHttpRequestGet
+     parameters:param
+     prepareExecute:^{}
+     
+     success:^(NSURLSessionDataTask *task, id responseObject) {
+         UserEntity *userEntity =
+         [UserEntity modelObjectWithDictionary:responseObject];
+         NSLog(@"responseObject: %@", userEntity);
+     }
+     
+     failure:^(NSURLSessionDataTask *task, NSError *error) {
+         NSLog(@"Error: %@", error);
+     }];
 }
 - (IBAction)crash:(id)sender {
     NSArray *array = [NSArray new];
-    [array objectAtIndex:0];
+    [array lastObject];
 }
 
 @end

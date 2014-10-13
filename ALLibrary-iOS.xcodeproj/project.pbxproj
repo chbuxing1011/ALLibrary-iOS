@@ -35,7 +35,34 @@
 		CE48E3B619E7CFC9004D8444 /* APIConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48E3B519E7CFC9004D8444 /* APIConfig.m */; };
 		CE79DDC119EBD1DA0000A993 /* dsym_upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = CE79DDBF19EBD1DA0000A993 /* dsym_upload.sh */; };
 		CE79DDC219EBD1DA0000A993 /* libCrittercism_v5_0_4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE79DDC019EBD1DA0000A993 /* libCrittercism_v5_0_4.a */; };
-		CE9F885319EBF93700525AF4 /* Crittercism.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = CE9F885219EBF93700525AF4 /* Crittercism.xcconfig */; };
+		CE9F888D19EC045200525AF4 /* BaseTableViewProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 941BF2E01963AC4F0003559D /* BaseTableViewProtocol.m */; };
+		CE9F888E19EC045200525AF4 /* RTHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 941BF2EE1963BE120003559D /* RTHttpClient.m */; };
+		CE9F888F19EC045200525AF4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 941BF2E91963BCA80003559D /* BaseViewController.m */; };
+		CE9F889019EC045200525AF4 /* UserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 94301C65198DEEA400BEBF9B /* UserEntity.m */; };
+		CE9F889119EC045200525AF4 /* APIConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48E3B519E7CFC9004D8444 /* APIConfig.m */; };
+		CE9F889219EC045200525AF4 /* LoginStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 94301C5E198DEE3A00BEBF9B /* LoginStorage.m */; };
+		CE9F889319EC045200525AF4 /* LoginHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 94301C62198DEE9300BEBF9B /* LoginHandler.m */; };
+		CE9F889419EC045200525AF4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 941BF2BF1963ABD50003559D /* AppDelegate.m */; };
+		CE9F889519EC045200525AF4 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94301C6A198DEF1C00BEBF9B /* LoginViewController.m */; };
+		CE9F889619EC045200525AF4 /* RTJSONResponseSerializerWithData.m in Sources */ = {isa = PBXBuildFile; fileRef = 941BF2F21963BF980003559D /* RTJSONResponseSerializerWithData.m */; };
+		CE9F889719EC045200525AF4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 941BF2BB1963ABD50003559D /* main.m */; };
+		CE9F889819EC045200525AF4 /* BaseHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 941BF2E61963BC8F0003559D /* BaseHandler.m */; };
+		CE9F889919EC045200525AF4 /* BaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 941BF3041963F9C80003559D /* BaseDao.m */; };
+		CE9F889A19EC045200525AF4 /* AppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 941BF2F91963EF110003559D /* AppUtils.m */; };
+		CE9F889B19EC045200525AF4 /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 941BF2E31963AD110003559D /* BaseEntity.m */; };
+		CE9F889C19EC045200525AF4 /* RTDatabaseHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 941BF3011963F9BA0003559D /* RTDatabaseHelper.m */; };
+		CE9F889D19EC045200525AF4 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94301C5B198DEE2700BEBF9B /* LoginView.m */; };
+		CE9F889E19EC045200525AF4 /* UserDefaultsUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 941BF2F61963EEF60003559D /* UserDefaultsUtils.m */; };
+		CE9F88A019EC045200525AF4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941BF2B11963ABD50003559D /* CoreGraphics.framework */; };
+		CE9F88A119EC045200525AF4 /* libCrittercism_v5_0_4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE79DDC019EBD1DA0000A993 /* libCrittercism_v5_0_4.a */; };
+		CE9F88A219EC045200525AF4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941BF2B31963ABD50003559D /* UIKit.framework */; };
+		CE9F88A319EC045200525AF4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941BF2AF1963ABD50003559D /* Foundation.framework */; };
+		CE9F88A419EC045200525AF4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B126A216BF245E5A170ACA2 /* libPods.a */; };
+		CE9F88A619EC045200525AF4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 941BF2B81963ABD50003559D /* InfoPlist.strings */; };
+		CE9F88A719EC045200525AF4 /* dsym_upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = CE79DDBF19EBD1DA0000A993 /* dsym_upload.sh */; };
+		CE9F88A819EC045200525AF4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE48E3B119E7CE80004D8444 /* LaunchScreen.xib */; };
+		CE9F88A919EC045200525AF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 941BF2C11963ABD50003559D /* Images.xcassets */; };
+		CE9F88AA19EC045200525AF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE48E3B219E7CE80004D8444 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,6 +120,8 @@
 		CE79DDBF19EBD1DA0000A993 /* dsym_upload.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = dsym_upload.sh; sourceTree = "<group>"; };
 		CE79DDC019EBD1DA0000A993 /* libCrittercism_v5_0_4.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCrittercism_v5_0_4.a; sourceTree = "<group>"; };
 		CE9F885219EBF93700525AF4 /* Crittercism.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Crittercism.xcconfig; sourceTree = "<group>"; };
+		CE9F88B019EC045200525AF4 /* ALLibrary-iOS copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ALLibrary-iOS copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9F88B119EC045200525AF4 /* ALLibrary-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ALLibrary-iOS copy-Info.plist"; path = "/Users/user/快盘/我的资料/代码库/ios Base/IOS_BASE/ALLibrary-iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		D28D886575A94289A4C45723 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +138,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE9F889F19EC045200525AF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9F88A019EC045200525AF4 /* CoreGraphics.framework in Frameworks */,
+				CE9F88A119EC045200525AF4 /* libCrittercism_v5_0_4.a in Frameworks */,
+				CE9F88A219EC045200525AF4 /* UIKit.framework in Frameworks */,
+				CE9F88A319EC045200525AF4 /* Foundation.framework in Frameworks */,
+				CE9F88A419EC045200525AF4 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -121,6 +162,7 @@
 				941BF2AD1963ABD50003559D /* Products */,
 				CE9F885219EBF93700525AF4 /* Crittercism.xcconfig */,
 				D28D886575A94289A4C45723 /* Pods.xcconfig */,
+				CE9F88B119EC045200525AF4 /* ALLibrary-iOS copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				941BF2AC1963ABD50003559D /* ALLibrary-iOS.app */,
+				CE9F88B019EC045200525AF4 /* ALLibrary-iOS copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -368,9 +411,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		941BF2AB1963ABD50003559D /* ALLibrary-iOS */ = {
+		941BF2AB1963ABD50003559D /* ALLibrary-iOS RELEASE */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 941BF2D81963ABD50003559D /* Build configuration list for PBXNativeTarget "ALLibrary-iOS" */;
+			buildConfigurationList = 941BF2D81963ABD50003559D /* Build configuration list for PBXNativeTarget "ALLibrary-iOS RELEASE" */;
 			buildPhases = (
 				7A4688D8EA034F81A8C81300 /* Check Pods Manifest.lock */,
 				941BF2A81963ABD50003559D /* Sources */,
@@ -383,9 +426,28 @@
 			);
 			dependencies = (
 			);
-			name = "ALLibrary-iOS";
+			name = "ALLibrary-iOS RELEASE";
 			productName = "ALLibrary-iOS";
 			productReference = 941BF2AC1963ABD50003559D /* ALLibrary-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE9F888A19EC045200525AF4 /* ALLibrary-iOS DEBUG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9F88AD19EC045200525AF4 /* Build configuration list for PBXNativeTarget "ALLibrary-iOS DEBUG" */;
+			buildPhases = (
+				CE9F888B19EC045200525AF4 /* Check Pods Manifest.lock */,
+				CE9F888C19EC045200525AF4 /* Sources */,
+				CE9F889F19EC045200525AF4 /* Frameworks */,
+				CE9F88A519EC045200525AF4 /* Resources */,
+				CE9F88AB19EC045200525AF4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ALLibrary-iOS DEBUG";
+			productName = "ALLibrary-iOS";
+			productReference = CE9F88B019EC045200525AF4 /* ALLibrary-iOS copy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -394,7 +456,7 @@
 		941BF2A41963ABD50003559D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = zlycare;
 				TargetAttributes = {
 					941BF2AB1963ABD50003559D = {
@@ -414,7 +476,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				941BF2AB1963ABD50003559D /* ALLibrary-iOS */,
+				941BF2AB1963ABD50003559D /* ALLibrary-iOS RELEASE */,
+				CE9F888A19EC045200525AF4 /* ALLibrary-iOS DEBUG */,
 			);
 		};
 /* End PBXProject section */
@@ -428,8 +491,19 @@
 				CE79DDC119EBD1DA0000A993 /* dsym_upload.sh in Resources */,
 				CE48E3B319E7CE80004D8444 /* LaunchScreen.xib in Resources */,
 				941BF2C21963ABD50003559D /* Images.xcassets in Resources */,
-				CE9F885319EBF93700525AF4 /* Crittercism.xcconfig in Resources */,
 				CE48E3B419E7CE80004D8444 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9F88A519EC045200525AF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9F88A619EC045200525AF4 /* InfoPlist.strings in Resources */,
+				CE9F88A719EC045200525AF4 /* dsym_upload.sh in Resources */,
+				CE9F88A819EC045200525AF4 /* LaunchScreen.xib in Resources */,
+				CE9F88A919EC045200525AF4 /* Images.xcassets in Resources */,
+				CE9F88AA19EC045200525AF4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +554,36 @@
 			shellPath = /bin/sh;
 			shellScript = "APP_ID=\"${APP_ID}\"\nAPI_KEY=\"${API_KEY}\"\nsource \"${SRCROOT}\"/Common/CrittercismSDK/dsym_upload.sh";
 		};
+		CE9F888B19EC045200525AF4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CE9F88AB19EC045200525AF4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -505,6 +609,31 @@
 				941BF3021963F9BA0003559D /* RTDatabaseHelper.m in Sources */,
 				94301C5C198DEE2700BEBF9B /* LoginView.m in Sources */,
 				941BF2F71963EEF60003559D /* UserDefaultsUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE9F888C19EC045200525AF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9F888D19EC045200525AF4 /* BaseTableViewProtocol.m in Sources */,
+				CE9F888E19EC045200525AF4 /* RTHttpClient.m in Sources */,
+				CE9F888F19EC045200525AF4 /* BaseViewController.m in Sources */,
+				CE9F889019EC045200525AF4 /* UserEntity.m in Sources */,
+				CE9F889119EC045200525AF4 /* APIConfig.m in Sources */,
+				CE9F889219EC045200525AF4 /* LoginStorage.m in Sources */,
+				CE9F889319EC045200525AF4 /* LoginHandler.m in Sources */,
+				CE9F889419EC045200525AF4 /* AppDelegate.m in Sources */,
+				CE9F889519EC045200525AF4 /* LoginViewController.m in Sources */,
+				CE9F889619EC045200525AF4 /* RTJSONResponseSerializerWithData.m in Sources */,
+				CE9F889719EC045200525AF4 /* main.m in Sources */,
+				CE9F889819EC045200525AF4 /* BaseHandler.m in Sources */,
+				CE9F889919EC045200525AF4 /* BaseDao.m in Sources */,
+				CE9F889A19EC045200525AF4 /* AppUtils.m in Sources */,
+				CE9F889B19EC045200525AF4 /* BaseEntity.m in Sources */,
+				CE9F889C19EC045200525AF4 /* RTDatabaseHelper.m in Sources */,
+				CE9F889D19EC045200525AF4 /* LoginView.m in Sources */,
+				CE9F889E19EC045200525AF4 /* UserDefaultsUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,6 +769,50 @@
 			};
 			name = Release;
 		};
+		CE9F88AE19EC045200525AF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D28D886575A94289A4C45723 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ALLibrary-iOS/ALLibrary-iOS-Prefix.pch";
+				INFOPLIST_FILE = "ALLibrary-iOS copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Common/CrittercismSDK",
+				);
+				PRODUCT_NAME = "ALLibrary-iOS copy";
+				PROVISIONING_PROFILE = "003bffd6-f517-45f4-91cf-7eed964cf0a3";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE9F88AF19EC045200525AF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D28D886575A94289A4C45723 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ALLibrary-iOS/ALLibrary-iOS-Prefix.pch";
+				INFOPLIST_FILE = "ALLibrary-iOS copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Common/CrittercismSDK",
+				);
+				PRODUCT_NAME = "ALLibrary-iOS copy";
+				PROVISIONING_PROFILE = "003bffd6-f517-45f4-91cf-7eed964cf0a3";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -652,11 +825,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		941BF2D81963ABD50003559D /* Build configuration list for PBXNativeTarget "ALLibrary-iOS" */ = {
+		941BF2D81963ABD50003559D /* Build configuration list for PBXNativeTarget "ALLibrary-iOS RELEASE" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				941BF2D91963ABD50003559D /* Debug */,
 				941BF2DA1963ABD50003559D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CE9F88AD19EC045200525AF4 /* Build configuration list for PBXNativeTarget "ALLibrary-iOS DEBUG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE9F88AE19EC045200525AF4 /* Debug */,
+				CE9F88AF19EC045200525AF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

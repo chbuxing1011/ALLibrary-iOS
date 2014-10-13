@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5DFC627ACD8C49D5B2CDF5CE"
-               BuildableName = "libPods.a"
-               BlueprintName = "Pods"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "941BF2AB1963ABD50003559D"
+               BuildableName = "ALLibrary-iOS.app"
+               BlueprintName = "ALLibrary-iOS RELEASE"
+               ReferencedContainer = "container:ALLibrary-iOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,25 +29,34 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "941BF2AB1963ABD50003559D"
+            BuildableName = "ALLibrary-iOS.app"
+            BlueprintName = "ALLibrary-iOS RELEASE"
+            ReferencedContainer = "container:ALLibrary-iOS.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5DFC627ACD8C49D5B2CDF5CE"
-            BuildableName = "libPods.a"
-            BlueprintName = "Pods"
-            ReferencedContainer = "container:Pods.xcodeproj">
+            BlueprintIdentifier = "941BF2AB1963ABD50003559D"
+            BuildableName = "ALLibrary-iOS.app"
+            BlueprintName = "ALLibrary-iOS RELEASE"
+            ReferencedContainer = "container:ALLibrary-iOS.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -57,6 +66,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "941BF2AB1963ABD50003559D"
+            BuildableName = "ALLibrary-iOS.app"
+            BlueprintName = "ALLibrary-iOS RELEASE"
+            ReferencedContainer = "container:ALLibrary-iOS.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
