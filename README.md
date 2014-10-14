@@ -19,11 +19,11 @@
 
 格式如下:
 
-`
-APP_ID=543b8df7bb94751247000002
 
-API_KEY=RpiMACqaFPcvWtn09H2P1MKgPlihcAP8
-`
+`APP_ID=543b8df7bb94751247000002`
+
+`API_KEY=RpiMACqaFPcvWtn09H2P1MKgPlihcAP8`
+
 
 在AppDelegate.m里，使用如下代码进行处理
 ```objetivce-c
