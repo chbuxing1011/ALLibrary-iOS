@@ -6,7 +6,7 @@ s.homepage     = "ttps://github.com/z306007236/ALLibrary-iOS.git"
 s.license      = 'MIT'
 s.author       = { "Allen" => "yu.zhang@foxmail.com" }
 s.source       = { :git => "ttps://github.com/z306007236/ALLibrary-iOS.git", :tag => "1.7" }
-s.source_files = ''
+s.source_files = 'ALLibrary-iOS/*.{h,m}'
 s.platform     = :ios, '7.0'
 s.framework    = 'UIKit'
 s.requires_arc = true
