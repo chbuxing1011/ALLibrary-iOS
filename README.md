@@ -12,9 +12,8 @@
 
 
 `2014.10.13更新`
-
-集成Crittercism，目前版本5.0.4。如果SDK有更新，可直接替换${SRCROOT}/Common/CrittercismSDK即可
-申请新的App后，把对应的APP_ID和API_KEY复制到Crittercism.xcconfig里.
+集成Crittercism，目前版本5.0.4。如果SDK有更新，可直接替换`${SRCROOT}/Common/CrittercismSDK`即可
+申请新的App后，把对应的`APP_ID和API_KEY`复制到`Crittercism.xcconfig`里.
 
 格式如下:
 
@@ -30,7 +29,7 @@ API_KEY=RpiMACqaFPcvWtn09H2P1MKgPlihcAP8
 
 
 
-通过读取Crittercism.xcconfig里的APP_ID来进行处理，代码写的比较搓，先将就着用吧。另外，还需要进行如下配置
+通过读取`Crittercism.xcconfig`里的`APP_ID`来进行处理，代码写的比较搓，先将就着用吧。另外，还需要进行如下配置
 [![](http://ftpdemo.qiniudn.com/1.png)](http://ftpdemo.qiniudn.com/1.png)
 
 
