@@ -4,12 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ALLibrary-iOS DEBUG.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
-		</dict>
-		<key>ALLibrary-iOS RELEASE.xcscheme</key>
+		<key>ALLibrary-iOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>

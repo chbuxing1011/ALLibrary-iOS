@@ -15,6 +15,7 @@
 #define APP_NAME @"AppName"
 #define VERSION @"v0.1.0"
 #define COPYRIGHT @"Copyright @2014 ZLYCARE All Rights Reserved"
+#define UmengAppkey @"5211818556240bc9ee01db2f"
 
 //数据库版本号
 #define DB_VERSION @"1"
@@ -37,6 +38,13 @@
 #define TEXT_NETWORK_ERROR @"网络异常，请检查网络连接"
 #define TEXT_SERVER_NOT_RESPOND @"服务器或网络异常,请稍后重试"
 
+/**
+ *
+ *
+ APP_ID="${APP_ID}"
+ API_KEY="${API_KEY}"
+ source "${SRCROOT}"/Common/CrittercismSDK/dsym_upload.sh
+ */
 @interface Constants : NSObject
 
 @end
