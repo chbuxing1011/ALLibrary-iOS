@@ -1,1 +1,0 @@
-../../BZObjectStore/BZObjectStore/Core/Classes/Query/BZObjectStoreNameBuilder.h

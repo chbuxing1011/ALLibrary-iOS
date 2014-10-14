@@ -1,1 +1,0 @@
-../../BZObjectStore/BZObjectStore/Core/Classes/Model/BZObjectStoreSQLiteColumnModel.h
