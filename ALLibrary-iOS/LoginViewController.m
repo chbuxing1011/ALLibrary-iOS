@@ -132,8 +132,7 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
     NSString *snsName =
     [[UMSocialSnsPlatformManager sharedInstance].allSnsValuesArray
      objectAtIndex:buttonIndex];
-    NSString *shareText =
-    @"友" @"盟" @"社" @"会"
+    NSString *shareText = @"友" @"盟" @"社" @"会"
     @"化组件可以让移动应用快速具备社会化分享、登录、"
     @"评" @"论" @"、"
     @"喜欢等功能，并提供实时、全面的社会化数据统计分"

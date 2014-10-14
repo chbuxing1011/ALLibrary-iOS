@@ -6,8 +6,12 @@
 
 
 ## 更新日志
+`2014.10.14更新`
+集成友盟社会化分享插件，在程序内可实现一键分享和摇一摇截图分享，特别要注意的是，微信分享时，需要把URL Schemes设置为申请的key值，这样才不会出现返回至应用程序错乱的情况。
+[![](http://ftpdemo.qiniudn.com/Umeng.1.png)](http://ftpdemo.qiniudn.com/Umeng.1.png)
 
-2014.10.13更新
+
+`2014.10.13更新`
 
 集成Crittercism，目前版本5.0.4。如果SDK有更新，可直接替换${SRCROOT}/Common/CrittercismSDK即可
 申请新的App后，把对应的APP_ID和API_KEY复制到Crittercism.xcconfig里.
