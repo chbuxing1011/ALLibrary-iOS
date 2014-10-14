@@ -14,7 +14,7 @@
 
 `2014.10.13更新`
 
-集成Crittercism，目前版本5.0.4。如果SDK有更新，可直接替换`${SRCROOT}/Common/CrittercismSDK`即可
+集成`Crittercism`，目前版本5.0.4。如果SDK有更新，可直接替换`${SRCROOT}/Common/CrittercismSDK`即可
 申请新的App后，把对应的`APP_ID和API_KEY`复制到`Crittercism.xcconfig`里.
 
 格式如下:
@@ -25,7 +25,7 @@
 `API_KEY=RpiMACqaFPcvWtn09H2P1MKgPlihcAP8`
 
 
-在AppDelegate.m里，使用如下代码进行处理
+在`AppDelegate.m`里，使用如下代码进行处理
 ```objetivce-c
 [Crittercism enableWithAppID:[AppUtils getcrittercismKey] andDelegate:nil];
 ```
