@@ -14,8 +14,7 @@
 
 `2014.10.13更新`
 
-集成`Crittercism`，目前版本5.0.4。如果SDK有更新，可直接替换`${SRCROOT}/Common/CrittercismSDK`即可
-申请新的App后，把对应的`APP_ID和API_KEY`复制到`Crittercism.xcconfig`里.
+集成`Crittercism`，目前版本`5.0.4`。如果SDK有更新，可直接替换`${SRCROOT}/Common/CrittercismSDK`即可。申请新的`App`后，把对应的`APP_ID和API_KEY`复制到`Crittercism.xcconfig`里.
 
 格式如下:
 
