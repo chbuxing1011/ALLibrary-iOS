@@ -175,7 +175,6 @@
 		CE8B5D1519ECFA9A00DB80F8 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		CE8B5D1719ECFA9F00DB80F8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		CE9F885219EBF93700525AF4 /* Crittercism.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Crittercism.xcconfig; sourceTree = "<group>"; };
-		CE9F88B119EC045200525AF4 /* ALLibrary-iOS copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "ALLibrary-iOS copy-Info.plist"; path = "/Users/user/快盘/我的资料/代码库/ios Base/IOS_BASE/ALLibrary-iOS copy-Info.plist"; sourceTree = "<absolute>"; };
 		D28D886575A94289A4C45723 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -224,7 +223,6 @@
 				941BF2AD1963ABD50003559D /* Products */,
 				CE9F885219EBF93700525AF4 /* Crittercism.xcconfig */,
 				D28D886575A94289A4C45723 /* Pods.xcconfig */,
-				CE9F88B119EC045200525AF4 /* ALLibrary-iOS copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
