@@ -19,9 +19,11 @@ NSString *const kUserEntityData = @"data";
 
 @implementation UserEntity
 
-@synthesize status = _status;
-@synthesize msg = _msg;
-@synthesize data = _data;
+@dynamic status, msg, data;
+
+//@synthesize status = _status;
+//@synthesize msg = _msg;
+//@synthesize data = _data;
 
 + (instancetype)modelObjectWithDictionary:(NSDictionary *)dict {
     return [[self alloc] initWithDictionary:dict];
@@ -73,9 +75,9 @@ NSString *const kUserEntityData = @"data";
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
-    [aCoder encodeObject:_status forKey:kUserEntityStatus];
-    [aCoder encodeObject:_msg forKey:kUserEntityMsg];
-    [aCoder encodeObject:_data forKey:kUserEntityData];
+    [aCoder encodeObject:self.status forKey:kUserEntityStatus];
+    [aCoder encodeObject:self.msg forKey:kUserEntityMsg];
+    [aCoder encodeObject:self.data forKey:kUserEntityData];
 }
 
 - (id)copyWithZone:(NSZone *)zone {

@@ -8,61 +8,81 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
+		</dict>
+		<key>Pods-AutoCoding.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BZObjectStore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BZRuntime.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-FMDB.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods-Reachability.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>Pods-SVProgressHUD.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>53353C5C7A434A5BAF46647E</key>
+		<key>2A47F32D69144353B7E4FD7E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5DFC627ACD8C49D5B2CDF5CE</key>
+		<key>593673F406BF47DF992242AC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>89AB52F2DCE54A09B028AE2F</key>
+		<key>71918BD1A0C24B64B2646713</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B80D96FBD6194872A71072A6</key>
+		<key>89EA15ADC1654945A74DD207</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D8AAE42380A240E49D730D20</key>
+		<key>CA38927F01564251BED7C27F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D33DE087342343F1A737B87F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DBC5B922781B4657B0F89D43</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EE2E10F9B79C4542B98B8774</key>
 		<dict>
 			<key>primary</key>
 			<true/>

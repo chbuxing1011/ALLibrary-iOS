@@ -182,7 +182,8 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
 
 - (IBAction)login:(id)sender {
     NSMutableDictionary *param = [NSMutableDictionary new];
-    [param setObject:@"18012306580" forKey:@"telphone"];
+    [param setObject:@"yunda" forKey:@"type"];
+    [param setObject:@"3100074176480" forKey:@"postid"];
     
     [[RTHttpClient defaultClient]
      requestWithPath:[[APIConfig defaultConfig] getAPIURL:API_LOGIN]
@@ -191,9 +192,8 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
      prepareExecute:^{}
      
      success:^(NSURLSessionDataTask *task, id responseObject) {
-         UserEntity *userEntity =
-         [UserEntity modelObjectWithDictionary:responseObject];
-         NSLog(@"responseObject: %@", responseObject);
+         //         NSLog(@"response: %@", responseObject);
+         
      }
      
      failure:^(NSURLSessionDataTask *task, NSError *error) {
