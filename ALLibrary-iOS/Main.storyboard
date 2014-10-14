@@ -17,22 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWZ-ao-6Sy">
-                                <rect key="frame" x="16" y="20" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWZ-ao-6Sy">
+                                <rect key="frame" x="270" y="64" width="60" height="30"/>
+                                <state key="normal" title="网络请求">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="login:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="R5S-ca-mcd"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71K-g3-s7K">
-                                <rect key="frame" x="16" y="58" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="crash:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aNx-7z-mh8"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2W-y0-wNX">
@@ -41,11 +32,76 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVe-N0-68R">
+                                <rect key="frame" x="266" y="102" width="69" height="30"/>
+                                <state key="normal" title="分享样式1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showShareList1:" destination="x5A-6p-PRh" eventType="touchUpInside" id="xJn-pP-mh6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zc3-jc-Jds">
+                                <rect key="frame" x="250" y="192" width="100" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="OwQ-Vm-scR"/>
+                                    <constraint firstAttribute="height" constant="44" id="SHq-G4-Ude"/>
+                                </constraints>
+                                <state key="normal" title="自定义样式">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showShareList3:" destination="x5A-6p-PRh" eventType="touchUpInside" id="5c2-ky-DTg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFk-8X-W9i">
+                                <rect key="frame" x="255" y="140" width="90" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Fjk-Uj-3QZ"/>
+                                    <constraint firstAttribute="width" constant="90" id="kKh-a9-RJV"/>
+                                </constraints>
+                                <state key="normal" title="实现摇一摇">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="setShakeSns:" destination="x5A-6p-PRh" eventType="touchUpInside" id="VFh-qD-7WG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2id-Vw-EJs">
+                                <rect key="frame" x="270" y="244" width="60" height="30"/>
+                                <state key="normal" title="直接分享">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showShareList4:" destination="x5A-6p-PRh" eventType="touchUpInside" id="ERY-62-swb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71K-g3-s7K">
+                                <rect key="frame" x="277" y="35" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="crash:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="aNx-7z-mh8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="NVe-N0-68R" firstAttribute="centerX" secondItem="xFk-8X-W9i" secondAttribute="centerX" id="25k-t7-Uq1"/>
+                            <constraint firstItem="sWZ-ao-6Sy" firstAttribute="leading" secondItem="2id-Vw-EJs" secondAttribute="leading" id="9D3-oO-bnY"/>
+                            <constraint firstItem="zc3-jc-Jds" firstAttribute="centerX" secondItem="xFk-8X-W9i" secondAttribute="centerX" id="Bkb-NG-I9b"/>
+                            <constraint firstItem="NVe-N0-68R" firstAttribute="top" secondItem="n3o-ft-A98" secondAttribute="bottom" constant="82" id="IOf-3h-cbB"/>
+                            <constraint firstItem="zc3-jc-Jds" firstAttribute="top" secondItem="xFk-8X-W9i" secondAttribute="bottom" constant="8" symbolic="YES" id="OoN-6X-ddK"/>
+                            <constraint firstItem="2id-Vw-EJs" firstAttribute="centerX" secondItem="B2W-y0-wNX" secondAttribute="centerX" id="XWl-Hm-Ptb"/>
+                            <constraint firstItem="71K-g3-s7K" firstAttribute="leading" secondItem="sWZ-ao-6Sy" secondAttribute="leading" constant="7" id="YsW-ms-FNu"/>
                             <constraint firstAttribute="bottom" secondItem="B2W-y0-wNX" secondAttribute="bottom" constant="20" symbolic="YES" id="bHS-mh-Ip9"/>
+                            <constraint firstItem="xFk-8X-W9i" firstAttribute="top" secondItem="NVe-N0-68R" secondAttribute="bottom" constant="8" symbolic="YES" id="f50-5y-5rG"/>
                             <constraint firstItem="B2W-y0-wNX" firstAttribute="centerX" secondItem="CL6-nZ-wXM" secondAttribute="centerX" id="gMh-qQ-K5M"/>
+                            <constraint firstItem="sWZ-ao-6Sy" firstAttribute="top" secondItem="n3o-ft-A98" secondAttribute="bottom" constant="44" id="hPT-wY-14M"/>
+                            <constraint firstItem="2id-Vw-EJs" firstAttribute="centerX" secondItem="zc3-jc-Jds" secondAttribute="centerX" id="hdh-qm-wQ5"/>
+                            <constraint firstItem="2id-Vw-EJs" firstAttribute="top" secondItem="zc3-jc-Jds" secondAttribute="bottom" constant="8" symbolic="YES" id="sEO-ST-1vf"/>
+                            <constraint firstItem="71K-g3-s7K" firstAttribute="top" secondItem="sWZ-ao-6Sy" secondAttribute="bottom" constant="-59" id="tZc-D1-T9V"/>
                         </constraints>
                     </view>
                     <connections>

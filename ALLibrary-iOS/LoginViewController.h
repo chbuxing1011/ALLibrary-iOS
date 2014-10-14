@@ -7,8 +7,11 @@
 //
 
 #import "BaseViewController.h"
-
-@interface LoginViewController : BaseViewController
-@property (weak, nonatomic) IBOutlet UILabel *m_versionLbl;
+#import "UMSocialControllerService.h"
+#import "UMSocialShakeService.h"
+@interface LoginViewController
+: BaseViewController<UIActionSheetDelegate, UMSocialUIDelegate,
+UMSocialShakeDelegate>
+@property(weak, nonatomic) IBOutlet UILabel *m_versionLbl;
 
 @end
