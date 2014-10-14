@@ -9,22 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-AutoCoding.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-BZObjectStore.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-BZRuntime.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-NanoStore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,42 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3BE7604C69BB891F43AB3A1C</key>
+		<key>00483356FE4E6BA7E7D90FC3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8DE1B898FED2242EA54219E5</key>
+		<key>56EE70D2553175420CB063B9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>921C28E0AEEEF52F89CF53A6</key>
+		<key>83755F0F2D94B414B9582CE1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A82C13A96C03BDE8B4F31C67</key>
+		<key>D87CACE87AF3F15250ECB6A6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AE97DB075B7B5D88AE3D9539</key>
+		<key>DC900B8FC1EA5F52846DDEE3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B7D36CDD961DE85FBEA2CF83</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>BD2F9DC1D3BC0A5EB3BCA12B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E2707972F7758F5BEE7301F7</key>
+		<key>ED6D7C2612615029EA4C11F6</key>
 		<dict>
 			<key>primary</key>
 			<true/>

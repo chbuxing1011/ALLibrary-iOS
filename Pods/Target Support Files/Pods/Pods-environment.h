@@ -48,30 +48,6 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 4
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 1
 
-// AutoCoding
-#define COCOAPODS_POD_AVAILABLE_AutoCoding
-#define COCOAPODS_VERSION_MAJOR_AutoCoding 2
-#define COCOAPODS_VERSION_MINOR_AutoCoding 2
-#define COCOAPODS_VERSION_PATCH_AutoCoding 0
-
-// BZObjectStore
-#define COCOAPODS_POD_AVAILABLE_BZObjectStore
-#define COCOAPODS_VERSION_MAJOR_BZObjectStore 1
-#define COCOAPODS_VERSION_MINOR_BZObjectStore 3
-#define COCOAPODS_VERSION_PATCH_BZObjectStore 12
-
-// BZObjectStore/Core
-#define COCOAPODS_POD_AVAILABLE_BZObjectStore_Core
-#define COCOAPODS_VERSION_MAJOR_BZObjectStore_Core 1
-#define COCOAPODS_VERSION_MINOR_BZObjectStore_Core 3
-#define COCOAPODS_VERSION_PATCH_BZObjectStore_Core 12
-
-// BZRuntime
-#define COCOAPODS_POD_AVAILABLE_BZRuntime
-#define COCOAPODS_VERSION_MAJOR_BZRuntime 1
-#define COCOAPODS_VERSION_MINOR_BZRuntime 0
-#define COCOAPODS_VERSION_PATCH_BZRuntime 4
-
 // FMDB
 #define COCOAPODS_POD_AVAILABLE_FMDB
 #define COCOAPODS_VERSION_MAJOR_FMDB 2
@@ -89,6 +65,12 @@
 #define COCOAPODS_VERSION_MAJOR_FMDB_standard 2
 #define COCOAPODS_VERSION_MINOR_FMDB_standard 4
 #define COCOAPODS_VERSION_PATCH_FMDB_standard 0
+
+// NanoStore
+#define COCOAPODS_POD_AVAILABLE_NanoStore
+#define COCOAPODS_VERSION_MAJOR_NanoStore 2
+#define COCOAPODS_VERSION_MINOR_NanoStore 7
+#define COCOAPODS_VERSION_PATCH_NanoStore 7
 
 // Reachability
 #define COCOAPODS_POD_AVAILABLE_Reachability
