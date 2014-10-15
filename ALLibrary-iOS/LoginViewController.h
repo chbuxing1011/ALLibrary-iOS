@@ -9,9 +9,10 @@
 #import "BaseViewController.h"
 #import "UMSocialControllerService.h"
 #import "UMSocialShakeService.h"
+#import "KuaiDi.h"
 @interface LoginViewController
-: BaseViewController<UIActionSheetDelegate, UMSocialUIDelegate,
+: BaseViewController <UIActionSheetDelegate, UMSocialUIDelegate,
 UMSocialShakeDelegate>
-@property(weak, nonatomic) IBOutlet UILabel *m_versionLbl;
+@property (weak, nonatomic) IBOutlet UILabel *m_versionLbl;
 
 @end

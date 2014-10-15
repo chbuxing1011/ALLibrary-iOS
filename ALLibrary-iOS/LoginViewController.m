@@ -41,6 +41,7 @@
     
     //在视图代理方法里通过调用LoginHandler处理登录业务逻辑，发起网络请求和结果处理均在LoginHandler中完成
 }
+
 - (IBAction)showShareList1:(id)sender {
     NSString *shareText = @"友" @"盟"
     @"社会化组件可以让移动应用快速具备社会化分享、"
@@ -122,8 +123,8 @@
  在自定义分享样式中，根据点击不同的点击来处理不同的的动作
  
  */
-- (void)actionSheet:(UIActionSheet *)actionSheet
-clickedButtonAtIndex:(NSInteger)buttonIndex {
+- (void)     actionSheet:(UIActionSheet *)actionSheet
+    clickedButtonAtIndex:(NSInteger)buttonIndex {
     if (buttonIndex + 1 >= actionSheet.numberOfButtons) {
         return;
     }
@@ -149,15 +150,16 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
         [UMSocialSnsPlatformManager getSocialPlatformWithName:snsName];
         snsPlatform.snsClickHandler(
                                     self, [UMSocialControllerService defaultControllerService], YES);
-    } else if (actionSheet.tag == kTagSharePost) {
+    }
+    else if (actionSheet.tag == kTagSharePost) {
         [[UMSocialDataService defaultDataService]
-         postSNSWithTypes:@[ snsName ]
+         postSNSWithTypes:@[snsName]
          content:shareText
          image:shareImage
          location:nil
          urlResource:nil
          presentedController:self
-         completion:^(UMSocialResponseEntity *response) {
+         completion: ^(UMSocialResponseEntity *response) {
              if (response.responseCode == UMSResponseCodeSuccess) {
                  UIAlertView *alertView =
                  [[UIAlertView alloc] initWithTitle:@"成功"
@@ -166,8 +168,9 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
                                   cancelButtonTitle:@"好"
                                   otherButtonTitles:nil];
                  [alertView show];
-             } else if (response.responseCode !=
-                        UMSResponseCodeCancel) {
+             }
+             else if (response.responseCode !=
+                      UMSResponseCodeCancel) {
                  UIAlertView *alertView =
                  [[UIAlertView alloc] initWithTitle:@"失败"
                                             message:@"分享失败"
@@ -188,18 +191,19 @@ clickedButtonAtIndex:(NSInteger)buttonIndex {
     [[RTHttpClient defaultClient]
      requestWithPath:[[APIConfig defaultConfig] getAPIURL:API_LOGIN]
      method:RTHttpRequestGet
-     parameters:param
-     prepareExecute:^{}
+	    parameters:param
+     prepareExecute: ^{}
      
-     success:^(NSURLSessionDataTask *task, id responseObject) {
-         //         NSLog(@"response: %@", responseObject);
-         
+     success: ^(NSURLSessionDataTask *task, id responseObject) {
+         KuaiDi *kd = [KuaiDi modelObjectWithDictionary:responseObject];
+         NSLog(@"response: %@", kd);
      }
      
-     failure:^(NSURLSessionDataTask *task, NSError *error) {
+     failure: ^(NSURLSessionDataTask *task, NSError *error) {
          NSLog(@"Error: %@", error);
      }];
 }
+
 - (IBAction)crash:(id)sender {
     NSArray *array = [NSArray new];
     [array lastObject];

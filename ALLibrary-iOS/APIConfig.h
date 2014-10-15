@@ -16,11 +16,12 @@
 
 /***************SERVER HOST***************/
 
-#define SERVER_HOST @"http://58.243.186.126:888/mapi/"
+#define SERVER_HOST @"http://www.kuaidi100.com/"
+#define LOCAL_SERVER_ISOPEN NO
 
 /***************SERVER API***************/
 //登录
-#define API_LOGIN @"login.action"
+#define API_LOGIN @"query"
 
 @interface APIConfig : NSObject
 

@@ -11,7 +11,7 @@
 #import "RTJSONResponseSerializerWithData.h"
 
 @interface RTHttpClient ()
-@property(nonatomic, strong) AFHTTPSessionManager *manager;
+@property (nonatomic, strong) AFHTTPSessionManager *manager;
 @end
 
 @implementation RTHttpClient
@@ -47,6 +47,25 @@
     return instance;
 }
 
+/**
+ *  本地测试环境
+ *
+ *  @param url     配置的服务器地址
+ *  @param success 成功回调
+ */
+- (void)localServerPath:(NSString *)url
+                success:(void (^)(NSURLSessionDataTask *, id))success {
+    NSArray *urls = [url componentsSeparatedByString:@"/"];
+    NSString *localPath = [urls lastObject];
+    localPath = [[NSBundle mainBundle] pathForResource:localPath ofType:nil];
+    NSData *data = [NSData dataWithContentsOfFile:localPath];
+    NSMutableDictionary *dic =
+    [NSJSONSerialization JSONObjectWithData:data
+                                    options:NSJSONReadingAllowFragments
+                                      error:nil];
+    success(nil, dic);
+}
+
 - (void)requestWithPath:(NSString *)url
                  method:(NSInteger)method
              parameters:(id)parameters
@@ -54,7 +73,7 @@
                 success:(void (^)(NSURLSessionDataTask *, id))success
                 failure:(void (^)(NSURLSessionDataTask *, NSError *))failure {
     //请求的URL
-    DLog(@"Request path:%@", url);
+    DLog(@"Request path:%@ and param: %@", url, parameters);
     
     //判断网络状况（有链接：执行请求；无链接：弹出提示）
     if ([self isConnectionAvailable]) {
@@ -62,39 +81,46 @@
         if (prepareExecute) {
             prepareExecute();
         }
-        switch (method) {
-            case RTHttpRequestGet: {
-                [self.manager GET:url
-                       parameters:parameters
-                          success:success
-                          failure:failure];
-            } break;
-                
-            case RTHttpRequestPost: {
-                [self.manager POST:url
-                        parameters:parameters
-                           success:success
-                           failure:failure];
-            } break;
-                
-            case RTHttpRequestDelete: {
-                [self.manager DELETE:url
-                          parameters:parameters
-                             success:success
-                             failure:failure];
-            } break;
-                
-            case RTHttpRequestPut: {
-                [self.manager PUT:url
-                       parameters:parameters
-                          success:success
-                          failure:false];
-            } break;
-                
-            default:
-                break;
+        
+        if (LOCAL_SERVER_ISOPEN) {
+            [self localServerPath:url success:success];
         }
-    } else {
+        else {
+            switch (method) {
+                case RTHttpRequestGet: {
+                    [self.manager GET:url
+                           parameters:parameters
+                              success:success
+                              failure:failure];
+                } break;
+                    
+                case RTHttpRequestPost: {
+                    [self.manager POST:url
+                            parameters:parameters
+                               success:success
+                               failure:failure];
+                } break;
+                    
+                case RTHttpRequestDelete: {
+                    [self.manager DELETE:url
+                              parameters:parameters
+                                 success:success
+                                 failure:failure];
+                } break;
+                    
+                case RTHttpRequestPut: {
+                    [self.manager PUT:url
+                           parameters:parameters
+                              success:success
+                              failure:false];
+                } break;
+                    
+                default:
+                    break;
+            }
+        }
+    }
+    else {
         //网络错误咯
         [self showExceptionDialog];
         //发出网络异常通知广播
@@ -114,7 +140,8 @@
                 parameters:parameters
                    success:success
                    failure:failure];
-    } else {
+    }
+    else {
         [self showExceptionDialog];
     }
 }
