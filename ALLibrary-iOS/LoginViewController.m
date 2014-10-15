@@ -189,9 +189,9 @@
     [param setObject:@"3100074176480" forKey:@"postid"];
     
     [[RTHttpClient defaultClient]
-     requestWithPath:[[APIConfig defaultConfig] getAPIURL:API_LOGIN]
+     requestWithPath:[[APIConfig manager] getAPIURL:API_LOGIN]
      method:RTHttpRequestGet
-	    parameters:param
+     parameters:param
      prepareExecute: ^{}
      
      success: ^(NSURLSessionDataTask *task, id responseObject) {

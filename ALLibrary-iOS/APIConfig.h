@@ -27,7 +27,7 @@
 
 @interface APIConfig : NSObject
 
-+ (APIConfig *)defaultConfig;
++ (APIConfig *)manager;
 
 - (NSString *)getAPIURL:(NSString *)apiName;
 @end

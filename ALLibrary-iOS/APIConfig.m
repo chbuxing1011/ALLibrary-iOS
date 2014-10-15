@@ -11,7 +11,7 @@
 
 @implementation APIConfig
 
-+ (APIConfig *)defaultConfig {
++ (APIConfig *)manager {
     static APIConfig *instance = nil;
     static dispatch_once_t predicate;
     dispatch_once(&predicate, ^{ instance = [[self alloc] init]; });
