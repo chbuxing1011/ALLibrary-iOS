@@ -17,6 +17,8 @@
 /***************SERVER HOST***************/
 
 #define SERVER_HOST @"http://www.kuaidi100.com/"
+
+/***************是否打开本地测试环境***************/
 #define LOCAL_SERVER_ISOPEN NO
 
 /***************SERVER API***************/
