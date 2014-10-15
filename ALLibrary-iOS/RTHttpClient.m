@@ -40,7 +40,7 @@
     return self;
 }
 
-+ (RTHttpClient *)defaultClient {
++ (RTHttpClient *)manager {
     static RTHttpClient *instance = nil;
     static dispatch_once_t predicate;
     dispatch_once(&predicate, ^{ instance = [[self alloc] init]; });

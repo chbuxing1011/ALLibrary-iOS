@@ -10,7 +10,7 @@
 #import "AFNetworking.h"
 
 //HTTP REQUEST METHOD TYPE
-typedef NS_ENUM(NSInteger, RTHttpRequestType) {
+typedef NS_ENUM (NSInteger, RTHttpRequestType) {
     RTHttpRequestGet,
     RTHttpRequestPost,
     RTHttpRequestDelete,
@@ -20,12 +20,12 @@ typedef NS_ENUM(NSInteger, RTHttpRequestType) {
 /**
  *  请求开始前预处理Block
  */
-typedef void(^PrepareExecuteBlock)(void);
+typedef void (^PrepareExecuteBlock)(void);
 
 /****************   RTHttpClient   ****************/
 @interface RTHttpClient : NSObject
 
-+ (RTHttpClient *)defaultClient;
++ (RTHttpClient *)manager;
 
 /**
  *  HTTP请求（GET、POST、DELETE、PUT）
@@ -38,11 +38,11 @@ typedef void(^PrepareExecuteBlock)(void);
  *  @param failure    请求失败处理块
  */
 - (void)requestWithPath:(NSString *)url
-                method:(NSInteger)method
-            parameters:(id)parameters
-        prepareExecute:(PrepareExecuteBlock) prepare
-               success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
-               failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;
+                 method:(NSInteger)method
+             parameters:(id)parameters
+         prepareExecute:(PrepareExecuteBlock)prepare
+                success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+                failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;
 
 /**
  *  HTTP请求（HEAD）
@@ -53,9 +53,9 @@ typedef void(^PrepareExecuteBlock)(void);
  *  @param failure
  */
 - (void)requestWithPathInHEAD:(NSString *)url
-                  parameters:(NSDictionary *)parameters
-                     success:(void (^)(NSURLSessionDataTask *task))success
-                     failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;
+                   parameters:(NSDictionary *)parameters
+                      success:(void (^)(NSURLSessionDataTask *task))success
+                      failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;
 
 //判断当前网络状态
 - (BOOL)isConnectionAvailable;

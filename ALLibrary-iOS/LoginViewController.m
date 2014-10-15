@@ -188,7 +188,7 @@
     [param setObject:@"yunda" forKey:@"type"];
     [param setObject:@"3100074176480" forKey:@"postid"];
     
-    [[RTHttpClient defaultClient]
+    [[RTHttpClient manager]
      requestWithPath:[[APIConfig manager] getAPIURL:API_LOGIN]
      method:RTHttpRequestGet
      parameters:param
