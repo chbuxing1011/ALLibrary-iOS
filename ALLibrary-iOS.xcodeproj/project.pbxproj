@@ -30,6 +30,7 @@
 		94301C63198DEE9300BEBF9B /* LoginHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 94301C62198DEE9300BEBF9B /* LoginHandler.m */; };
 		94301C66198DEEA400BEBF9B /* UserEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 94301C65198DEEA400BEBF9B /* UserEntity.m */; };
 		94301C6B198DEF1C00BEBF9B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94301C6A198DEF1C00BEBF9B /* LoginViewController.m */; };
+		CE299A7819EF76E50078A1E7 /* ALNanoStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CE299A7719EF76E50078A1E7 /* ALNanoStore.m */; };
 		CE48E3B319E7CE80004D8444 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE48E3B119E7CE80004D8444 /* LaunchScreen.xib */; };
 		CE48E3B419E7CE80004D8444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE48E3B219E7CE80004D8444 /* Main.storyboard */; };
 		CE48E3B619E7CFC9004D8444 /* APIConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48E3B519E7CFC9004D8444 /* APIConfig.m */; };
@@ -117,6 +118,8 @@
 		94301C65198DEEA400BEBF9B /* UserEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserEntity.m; sourceTree = "<group>"; };
 		94301C69198DEF1C00BEBF9B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		94301C6A198DEF1C00BEBF9B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		CE299A7619EF76E50078A1E7 /* ALNanoStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALNanoStore.h; sourceTree = "<group>"; };
+		CE299A7719EF76E50078A1E7 /* ALNanoStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALNanoStore.m; sourceTree = "<group>"; };
 		CE48E3B119E7CE80004D8444 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		CE48E3B219E7CE80004D8444 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CE48E3B519E7CFC9004D8444 /* APIConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIConfig.m; sourceTree = "<group>"; };
@@ -363,6 +366,7 @@
 		941BF308196402420003559D /* Storage */ = {
 			isa = PBXGroup;
 			children = (
+				CE299A7519EF76E50078A1E7 /* StoreManager */,
 				94301C5D198DEE3A00BEBF9B /* LoginStorage.h */,
 				94301C5E198DEE3A00BEBF9B /* LoginStorage.m */,
 			);
@@ -466,6 +470,15 @@
 				941BF2F21963BF980003559D /* RTJSONResponseSerializerWithData.m */,
 			);
 			name = RTHttpClient;
+			sourceTree = "<group>";
+		};
+		CE299A7519EF76E50078A1E7 /* StoreManager */ = {
+			isa = PBXGroup;
+			children = (
+				CE299A7619EF76E50078A1E7 /* ALNanoStore.h */,
+				CE299A7719EF76E50078A1E7 /* ALNanoStore.m */,
+			);
+			path = StoreManager;
 			sourceTree = "<group>";
 		};
 		CE48E3AE19E7CDFE004D8444 /* StoryBoard */ = {
@@ -792,6 +805,7 @@
 				941BF2EF1963BE120003559D /* RTHttpClient.m in Sources */,
 				941BF2EA1963BCA80003559D /* BaseViewController.m in Sources */,
 				94301C66198DEEA400BEBF9B /* UserEntity.m in Sources */,
+				CE299A7819EF76E50078A1E7 /* ALNanoStore.m in Sources */,
 				CE48E3B619E7CFC9004D8444 /* APIConfig.m in Sources */,
 				94301C5F198DEE3A00BEBF9B /* LoginStorage.m in Sources */,
 				94301C63198DEE9300BEBF9B /* LoginHandler.m in Sources */,
@@ -868,7 +882,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -937,6 +951,7 @@
 					"$(PROJECT_DIR)/Common/UMSocial_Sdk_Extra_Frameworks/Wechat",
 					"$(PROJECT_DIR)/Common/UMSocial_Sdk_Extra_Frameworks/YiXin",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "ALLibrary-iOS";
 				PROVISIONING_PROFILE = "003bffd6-f517-45f4-91cf-7eed964cf0a3";
 				TARGETED_DEVICE_FAMILY = 1;

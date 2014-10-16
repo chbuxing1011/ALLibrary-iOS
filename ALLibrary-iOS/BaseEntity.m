@@ -11,7 +11,7 @@
 @implementation BaseEntity
 
 + (instancetype)modelObjectWithDictionary:(NSDictionary *)dict {
-    return nil;
+  return nil;
 }
 
 /**
@@ -22,7 +22,7 @@
  *  @return
  */
 - (instancetype)initWithDictionary:(NSDictionary *)dict {
-    return nil;
+  return nil;
 }
 
 /**
@@ -33,7 +33,14 @@
  *  @return
  */
 - (NSDictionary *)dictionaryRepresentation {
-    return nil;
+  return nil;
 }
 
+/**
+ *  根据字典初始化
+ *
+ *  @param dict
+ */
+- (void)modelObjectWithDic:(NSDictionary *)dict {
+}
 @end

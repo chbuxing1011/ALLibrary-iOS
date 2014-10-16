@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "NSFNanoObject.h"
 #define SUCCESS 0
 
-@interface BaseEntity : NSObject
+@interface BaseEntity : NSFNanoObject
 
 /**
  *  根据返回值解析对象
@@ -38,4 +38,10 @@
  */
 - (NSDictionary *)dictionaryRepresentation;
 
+/**
+ *  根据字典初始化
+ *
+ *  @param dict
+ */
+- (void)modelObjectWithDic:(NSDictionary *)dict;
 @end
