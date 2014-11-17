@@ -18,6 +18,8 @@
 
 //#import "UMSocial.h"
 #import "UMSocialScreenShoter.h"
+#import "Data.h"
+#import "ALNanoStore.h"
 
 #define kTagShareEdit 101
 #define kTagSharePost 102
@@ -209,4 +211,74 @@
     [array lastObject];
 }
 
+
+- (IBAction)createKuaiDiOrder:(id)sender {
+    KuaiDi *kuaidi = [KuaiDi new];
+    kuaidi.nu = @"456";
+    kuaidi.message = @"132456";
+    kuaidi.state = @"Good";
+    kuaidi.status = @"已付款";
+    
+    Data *data1 = [Data new];
+    data1.context = @"111";
+    data1.time = @"111";
+    data1.ftime = @"111";
+    
+    Data *data2 = [Data new];
+    data2.context = @"222";
+    data2.time = @"222";
+    data2.ftime = @"222";
+    
+    [[ALNanoStore shareALNanoStore] saveObject:kuaidi
+                               completeHandler:^(BOOL issuccess, NSError *error) {
+                                   if (issuccess) {
+                                       NSLog(@"createKuaiDiOrder success");
+                                   }
+                                   
+                               }];
+}
+
+- (IBAction)searchKuaiDi:(id)sender {
+    [[ALNanoStore shareALNanoStore] searchObjects:@{
+                                                    @"status" : @"已付款"
+                                                    } withClassString:NSStringFromClass([KuaiDi class])
+                                  completeHandler:^(NSArray *array,
+                                                    NSError *error) {
+                                      NSLog(@"searchKuaiDi arrary:%@", array);
+                                  }];
+}
+- (IBAction)updateKuaiDi:(id)sender {
+    [[ALNanoStore shareALNanoStore]
+     searchObjects:@{
+                     @"status" : @"已付款"
+                     }
+     withClassString:NSStringFromClass([KuaiDi class])
+     completeHandler:^(NSArray *array, NSError *error) {
+         NSLog(@"1、searchKuaiDi arrary:%@", array);
+         
+         if ([array count] > 0) {
+             KuaiDi *kuaidi = [array objectAtIndex:0];
+             kuaidi.status = @"已收货";
+             [[ALNanoStore shareALNanoStore]
+              saveObject:kuaidi
+              completeHandler:^(BOOL issuccess, NSError *error) {
+                  if (issuccess) {
+                      NSLog(@"updateKuaiDi success");
+                  }
+                  
+              }];
+         }
+         
+     }];
+}
+- (IBAction)deleteKuaiDi:(id)sender {
+    [[ALNanoStore shareALNanoStore]
+     removeObjectsWithCondition:@{
+                                  @"status" : @"已付款"
+                                  } withClassString:NSStringFromClass([KuaiDi class])
+     completeHandler:^(BOOL issuccess, NSError *error) {
+         NSLog(@"removeObjectsWithCondition issuccess: %@",
+               issuccess ? @"YES" : @"NO");
+     }];
+}
 @end
