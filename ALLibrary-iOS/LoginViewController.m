@@ -229,6 +229,7 @@
     data2.time = @"222";
     data2.ftime = @"222";
     
+    kuaidi.data = [NSArray arrayWithObjects:data1,data2 ,nil];
     [[ALNanoStore shareALNanoStore] saveObject:kuaidi
                                completeHandler:^(BOOL issuccess, NSError *error) {
                                    if (issuccess) {
@@ -240,7 +241,7 @@
 
 - (IBAction)searchKuaiDi:(id)sender {
     [[ALNanoStore shareALNanoStore] searchObjects:@{
-                                                    @"status" : @"已付款"
+                                                    @"data.time" : @"111"
                                                     } withClassString:NSStringFromClass([KuaiDi class])
                                   completeHandler:^(NSArray *array,
                                                     NSError *error) {

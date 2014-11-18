@@ -36,6 +36,37 @@ NSString *const kKuaiDiState = @"state";
 @synthesize com = _com;
 @synthesize state = _state;
 
+/**
+ *  根据字典初始化
+ *
+ *  @param dict
+ */
+- (void)modelObjectWithDic:(NSDictionary *)dict
+{
+    if(self && [dict isKindOfClass:[NSDictionary class]]) {
+        self.status = [self objectOrNilForKey:kKuaiDiStatus fromDictionary:dict];
+        self.nu = [self objectOrNilForKey:kKuaiDiNu fromDictionary:dict];
+        self.ischeck = [self objectOrNilForKey:kKuaiDiIscheck fromDictionary:dict];
+        self.condition = [self objectOrNilForKey:kKuaiDiCondition fromDictionary:dict];
+        NSObject *receivedData = [dict objectForKey:kKuaiDiData];
+        NSMutableArray *parsedData = [NSMutableArray array];
+        if ([receivedData isKindOfClass:[NSArray class]]) {
+            for (NSDictionary *item in (NSArray *)receivedData) {
+                if ([item isKindOfClass:[NSDictionary class]]) {
+                    [parsedData addObject:[Data modelObjectWithDictionary:item]];
+                }
+            }
+        } else if ([receivedData isKindOfClass:[NSDictionary class]]) {
+            [parsedData addObject:[Data modelObjectWithDictionary:(NSDictionary *)receivedData]];
+        }
+        
+        self.data = [NSArray arrayWithArray:parsedData];
+        self.message = [self objectOrNilForKey:kKuaiDiMessage fromDictionary:dict];
+        self.com = [self objectOrNilForKey:kKuaiDiCom fromDictionary:dict];
+        self.state = [self objectOrNilForKey:kKuaiDiState fromDictionary:dict];
+    }
+
+}
 
 + (instancetype)modelObjectWithDictionary:(NSDictionary *)dict
 {

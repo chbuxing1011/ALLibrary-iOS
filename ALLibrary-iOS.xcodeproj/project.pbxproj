@@ -35,6 +35,7 @@
 		CE48E3B419E7CE80004D8444 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE48E3B219E7CE80004D8444 /* Main.storyboard */; };
 		CE48E3B619E7CFC9004D8444 /* APIConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = CE48E3B519E7CFC9004D8444 /* APIConfig.m */; };
 		CE563C011A19E5FE003A6768 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE563C001A19E5FE003A6768 /* BaseTableViewController.m */; };
+		CE563C041A1A215B003A6768 /* ProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE563C031A1A215B003A6768 /* ProductListViewController.m */; };
 		CE79DDC119EBD1DA0000A993 /* dsym_upload.sh in Resources */ = {isa = PBXBuildFile; fileRef = CE79DDBF19EBD1DA0000A993 /* dsym_upload.sh */; };
 		CE79DDC219EBD1DA0000A993 /* libCrittercism_v5_0_4.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE79DDC019EBD1DA0000A993 /* libCrittercism_v5_0_4.a */; };
 		CE85D0D319EE0E4A00608116 /* query in Resources */ = {isa = PBXBuildFile; fileRef = CE85D0D219EE0E4A00608116 /* query */; };
@@ -126,6 +127,8 @@
 		CE48E3B519E7CFC9004D8444 /* APIConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIConfig.m; sourceTree = "<group>"; };
 		CE563BFF1A19E5FE003A6768 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
 		CE563C001A19E5FE003A6768 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		CE563C021A1A215B003A6768 /* ProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductListViewController.h; sourceTree = "<group>"; };
+		CE563C031A1A215B003A6768 /* ProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductListViewController.m; sourceTree = "<group>"; };
 		CE79DDBC19EBD1DA0000A993 /* CRFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRFilter.h; sourceTree = "<group>"; };
 		CE79DDBD19EBD1DA0000A993 /* Crittercism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crittercism.h; sourceTree = "<group>"; };
 		CE79DDBE19EBD1DA0000A993 /* CrittercismDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrittercismDelegate.h; sourceTree = "<group>"; };
@@ -462,6 +465,8 @@
 			children = (
 				94301C69198DEF1C00BEBF9B /* LoginViewController.h */,
 				94301C6A198DEF1C00BEBF9B /* LoginViewController.m */,
+				CE563C021A1A215B003A6768 /* ProductListViewController.h */,
+				CE563C031A1A215B003A6768 /* ProductListViewController.m */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -814,6 +819,7 @@
 				CE48E3B619E7CFC9004D8444 /* APIConfig.m in Sources */,
 				CE563C011A19E5FE003A6768 /* BaseTableViewController.m in Sources */,
 				94301C5F198DEE3A00BEBF9B /* LoginStorage.m in Sources */,
+				CE563C041A1A215B003A6768 /* ProductListViewController.m in Sources */,
 				94301C63198DEE9300BEBF9B /* LoginHandler.m in Sources */,
 				941BF2C01963ABD50003559D /* AppDelegate.m in Sources */,
 				94301C6B198DEF1C00BEBF9B /* LoginViewController.m in Sources */,

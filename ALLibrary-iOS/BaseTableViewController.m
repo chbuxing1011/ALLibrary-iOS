@@ -10,7 +10,7 @@
 
 #import "EGORefreshTableHeaderView.h"
 
-@interface BaseTableViewController ()<EGORefreshTableHeaderDelegate>
+@interface BaseTableViewController ()<EGORefreshTableHeaderDelegate,UIScrollViewDelegate>
 {
     EGORefreshTableHeaderView *m_refreshView;
     BOOL m_isRefresh;                               //是否刷新

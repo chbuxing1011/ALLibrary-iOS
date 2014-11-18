@@ -22,4 +22,10 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dict;
 - (NSDictionary *)dictionaryRepresentation;
 
+/**
+ *  根据字典初始化
+ *
+ *  @param dict
+ */
+- (void)modelObjectWithDic:(NSDictionary *)dict;
 @end
