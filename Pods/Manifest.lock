@@ -27,17 +27,19 @@ PODS:
   - FMDB/standard (2.4):
     - FMDB/common
   - NanoStore (2.7.7)
-  - Reachability (3.1.1)
+  - PayPal-iOS-SDK (2.8.0)
+  - Reachability (3.2)
   - SDWebImage (3.7.1):
     - SDWebImage/Core
   - SDWebImage/Core (3.7.1)
-  - SVProgressHUD (1.0)
+  - SVProgressHUD (1.1.2)
 
 DEPENDENCIES:
   - AFNetworking (= 2.4.1)
   - EGOTableViewPullRefreshAndLoadMore (= 1.0.4)
   - FMDB (>= 2.4)
   - NanoStore (= 2.7.7)
+  - PayPal-iOS-SDK (~> 2.8.0)
   - Reachability (>= 3.1.1)
   - SDWebImage (= 3.7.1)
   - SVProgressHUD (>= 1.0)
@@ -47,8 +49,9 @@ SPEC CHECKSUMS:
   EGOTableViewPullRefreshAndLoadMore: 1dcd0f78d7aa8dee28adf64891b627904be8cd71
   FMDB: 0b2fa25e5264ef177973c0cb8c02c711107979aa
   NanoStore: f20a87ce80c6049a1d927bb1e6d2771686d11be0
-  Reachability: 8e9635e3cb4f98e7f825e51147f677ecc694d0e7
+  PayPal-iOS-SDK: d3c76146a649a3f59f13ed98c0c8a55da9d90ca6
+  Reachability: 1ef8adf5c4e3d362f96515d4278f68dad3c26930
   SDWebImage: 116e88633b5b416ea0ca4b334a4ac59cf72dd38d
-  SVProgressHUD: 5034c6e22b8c2ca3e09402e48d41ed0340aa1c50
+  SVProgressHUD: da7a49e789af645d9279ffbca62318945a832438
 
 COCOAPODS: 0.34.4

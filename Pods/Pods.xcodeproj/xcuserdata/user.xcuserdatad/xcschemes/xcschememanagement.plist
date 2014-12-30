@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-PayPal-iOS-SDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Reachability.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,42 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>03FE1A892712DADA37E24B6E</key>
+		<key>44BA8D8FA08B84DEB94826C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>19921538415BA8DAA8F289FB</key>
+		<key>4DAB6C93FEB8B545280DEC42</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2CE75747B0BF8839AFE6F08D</key>
+		<key>835EA24DB8902D0FCCBA1194</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3EDED98751D807CA67C99673</key>
+		<key>988DAF65F00D8A429AA7ED33</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>86E5837C7746E1351BDF9C48</key>
+		<key>A876F3E459004B559465B983</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B836BD9C5E290966CF8EE1A2</key>
+		<key>ABC1B16D8AE779555E98539C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D47BDD89599CB3C1ED510BFF</key>
+		<key>B0B3A184A8E6E24600290323</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E0B8660426553FE4BD889DE9</key>
+		<key>D825324916B27F57BB2157B8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D959F644BAE6F909F0C52D0F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

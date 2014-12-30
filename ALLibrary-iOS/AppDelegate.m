@@ -16,6 +16,8 @@
 #import "UMSocialRenrenHandler.h"
 #import "UMSocialQQHandler.h"
 
+#import "PayPalMobile.h"
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application
@@ -61,6 +63,9 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //    //设置支持没有客户端情况下使用SSO授权
     [UMSocialQQHandler setSupportWebView:YES];
     //
+#warning "Enter your credentials"
+    [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : @"7bb2df9a37b97",
+                                                           PayPalEnvironmentSandbox : @"10071133233c9"}];
     
     return YES;
 }
